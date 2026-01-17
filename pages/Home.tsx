@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Settings, Play, CheckCircle2, Star } from 'lucide-react';
-import { SERVICES, TESTIMONIALS, PRICING_PLANS, TEAM_MEMBERS } from '../constants';
+import { SERVICES, Feautured, TESTIMONIALS, PRICING_PLANS, TEAM_MEMBERS } from '../constants';
 import SectionHeading from '../components/ui/SectionHeading';
 import { Link } from 'react-router-dom';
 
