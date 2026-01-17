@@ -1,0 +1,7 @@
+{
+  "name": "Spark Cleaning - Professional Cleaning Services",
+  "description": "A premium cleaning service website with multi-page navigation, service showcases, pricing plans, and a modern aesthetic inspired by the Bixol theme.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
