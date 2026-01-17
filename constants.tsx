@@ -13,13 +13,24 @@ import {
 } from 'lucide-react';
 import { Service, Testimonial, PricingPlan, TeamMember } from './types';
 
+
 export const SERVICES: Service[] = [
   {
     id: 'expert-craftmanship',
     title: 'Expert Craftsmanship',
     description: 'Our team delivers top-notch cleaning with unmatched precision. Every corner of your home or office is handled with care and attention to detail.',
     icon:<ShieldHalf className="w-8 h-8" />,
-    image: 'https://picsum.photos/seed/house/600/400'
+    image: 'https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+  },
+];
+
+export const SERVICES: Service[] = [
+  {
+    id: 'house-cleaning',
+    title: 'House Cleaning',
+    description: 'Our team delivers top-notch cleaning with unmatched precision. Every corner of your home or office is handled with care and attention to detail.',
+    icon:<ShieldHalf className="w-8 h-8" />,
+    image: 'https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   {
     id: 'office-cleaning',
