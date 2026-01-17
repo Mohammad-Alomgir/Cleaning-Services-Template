@@ -35,9 +35,6 @@ const Header: React.FC = () => {
             <span className="font-medium text-spark-blue">Welcome to our Spark Cleaning Service!</span>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-spark-blue"><Facebook size={14} /></a>
-              <a href="#" className="hover:text-spark-blue"><Twitter size={14} /></a>
-              <a href="#" className="hover:text-spark-blue"><Instagram size={14} /></a>
-              <a href="#" className="hover:text-spark-blue"><Linkedin size={14} /></a>
             </div>
           </div>
           <div className="flex space-x-8">
