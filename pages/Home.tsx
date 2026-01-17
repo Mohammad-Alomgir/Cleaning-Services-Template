@@ -265,7 +265,7 @@ const Home: React.FC = () => {
                   ))}
                 </ul>
                 <Link
-                  to="/contact"
+                  to="https://sparkcleaningdemo.netlify.app/#/contact"
                   className={`block text-center w-full py-4 rounded font-bold transition-all ${plan.isPopular
                       ? 'bg-spark-blue text-white hover:bg-spark-cyan shadow-lg'
                       : 'bg-blue-50 text-spark-blue hover:bg-spark-blue hover:text-white'
