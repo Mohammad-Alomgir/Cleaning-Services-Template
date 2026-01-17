@@ -188,7 +188,7 @@ className="flex items-center space-x-3 text-[#0b1b36] font-bold px-8 py-4 hover:
               ))}
             </div>
             <div className="relative">
-              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=500&auto=format&fit=crop" alt="Cleaner" className="rounded-2xl mx-auto shadow-xl" />
+              <img src="https://images.unsplash.com/photo-1580256081112-e49377338b7f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cleaner" className="rounded-2xl mx-auto shadow-xl" />
               <div className="absolute inset-0 bg-spark-blue mix-blend-multiply opacity-20 rounded-2xl"></div>
             </div>
             <div className="space-y-12">
