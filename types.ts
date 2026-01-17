@@ -1,6 +1,14 @@
 // Import React to provide the React namespace for types like React.ReactNode
 import React from 'react';
 
+
+export interface Feautured {
+  id: string;
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+}
+
 export interface Service {
   id: string;
   title: string;
