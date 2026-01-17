@@ -76,12 +76,15 @@ const Home: React.FC = () => {
                 <span>Our Services</span>
                 <Settings size={18} />
               </Link>
-              <button className="flex items-center space-x-3 text-[#0b1b36] font-bold px-8 py-4 hover:text-spark-blue transition-colors">
-                <div className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-spark-blue">
-                  <Play size={16} fill="currentColor" />
-                </div>
-                <span>Watch Story</span>
-              </button>
+<Link
+to="/services"
+className="flex items-center space-x-3 text-[#0b1b36] font-bold px-8 py-4 hover:text-spark-blue transition-colors"
+>
+<div className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-spark-blue">
+<Play size={16} fill="currentColor" />
+</div>
+<span>Watch Story</span>
+</Link>
             </div>
           </div>
           <div className="relative">
