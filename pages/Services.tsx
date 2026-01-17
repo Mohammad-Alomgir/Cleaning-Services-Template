@@ -37,7 +37,7 @@ const Services: React.FC = () => {
                     ))}
                   </ul>
                   <button className="flex items-center space-x-2 font-bold text-spark-blue hover:text-spark-cyan transition-colors uppercase text-xs tracking-widest">
-                    <span>Service Details</span>
+                    <a href="/contact">Service Details</span>
                     <ArrowRight size={14} />
                   </button>
                 </div>
