@@ -98,14 +98,14 @@ className="flex items-center space-x-3 text-[#0b1b36] font-bold px-8 py-4 hover:
       <section className="py-24 bg-white relative">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {SERVICES.slice(0, 3).map((service) => (
-              <div key={service.id} className="group p-10 bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.05)] border border-gray-50 hover:border-spark-blue hover:-translate-y-2 transition-all duration-500">
+            {Feautured.map((feautured) => (
+              <div key={feautured.id} className="group p-10 bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.05)] border border-gray-50 hover:border-spark-blue hover:-translate-y-2 transition-all duration-500">
                 <div className="w-20 h-20 bg-blue-50 text-spark-blue rounded-full flex items-center justify-center mb-8 group-hover:bg-spark-blue group-hover:text-white transition-all duration-500">
-                  {service.icon}
+                  {feautured.icon}
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-[#0b1b36]">{service.title}</h3>
+                <h3 className="text-2xl font-bold mb-4 text-[#0b1b36]">{feautured.title}</h3>
                 <p className="text-gray-500 mb-8 leading-relaxed">
-                  {service.description}
+                  {feautured.description}
                 </p>
                 <Link to="/services" className="text-spark-blue font-extrabold uppercase text-xs tracking-[0.2em] inline-flex items-center group-hover:text-spark-cyan transition-colors">
                   Read More <span className="ml-2">→</span>
