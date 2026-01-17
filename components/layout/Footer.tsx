@@ -43,9 +43,6 @@ const Footer: React.FC = () => {
             </form>
             <div className="flex space-x-4 mt-8">
               <a href="#" className="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:bg-spark-blue hover:border-spark-blue transition-all"><Facebook size={18} /></a>
-              <a href="#" className="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:bg-spark-blue hover:border-spark-blue transition-all"><Twitter size={18} /></a>
-              <a href="#" className="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:bg-spark-blue hover:border-spark-blue transition-all"><Instagram size={18} /></a>
-              <a href="#" className="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:bg-spark-blue hover:border-spark-blue transition-all"><Linkedin size={18} /></a>
             </div>
           </div>
 
