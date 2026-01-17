@@ -8,16 +8,17 @@ import {
   WashingMachine, 
   UtensilsCrossed,
   Hammer,
-  Trash2
+  Trash2,
+  ShieldHalf
 } from 'lucide-react';
 import { Service, Testimonial, PricingPlan, TeamMember } from './types';
 
 export const SERVICES: Service[] = [
   {
-    id: 'house-cleaning',
-    title: 'House Cleaning',
-    description: 'Professional home cleaning services tailored to your specific needs and schedule.',
-    icon: <Home className="w-8 h-8" />,
+    id: 'expert-craftmanship',
+    title: 'Expert Craftsmanship',
+    description: 'Our team delivers top-notch cleaning with unmatched precision. Every corner of your home or office is handled with care and attention to detail.',
+    icon:<ShieldHalf className="w-8 h-8" />,
     image: 'https://picsum.photos/seed/house/600/400'
   },
   {
