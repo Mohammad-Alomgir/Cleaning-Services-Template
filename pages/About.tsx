@@ -24,8 +24,8 @@ const About: React.FC = () => {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="grid grid-cols-2 gap-4">
-             <img src="https://unsplash.com/photos/a-person-in-white-gloves-is-cleaning-a-chair-WnuDJlnuOhU" alt="Cleaning" className="rounded-2xl shadow-lg mt-12" />
-             <img src="https://unsplash.com/photos/a-person-in-blue-gloves-is-cleaning-a-stainless-steel-sink-_6XMmChsACc" alt="Cleaning" className="rounded-2xl shadow-lg" />
+             <img src="https://plus.unsplash.com/premium_photo-1679500354595-0feead204a28?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cleaning" className="rounded-2xl shadow-lg mt-12" />
+             <img src="https://images.unsplash.com/photo-1713110824336-f78c320dcf8e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cleaning" className="rounded-2xl shadow-lg" />
           </div>
           <div>
             <SectionHeading 
