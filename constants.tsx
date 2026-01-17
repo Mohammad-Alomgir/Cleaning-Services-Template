@@ -36,7 +36,7 @@ export const SERVICES: Service[] = [
     title: 'Office Cleaning',
     description: 'Ensure a productive and healthy environment for your team with our commercial cleaning.',
     icon: <Building2 className="w-8 h-8" />,
-    image: 'https://picsum.photos/seed/office/600/400'
+    image: 'https://www.freepik.com/free-photo/professional-cleaning-service-person-cleaning-office-window_48048756.htm#fromView=keyword&page=1&position=10&uuid=8ec8e29b-04f4-455d-8dba-0f940c964bb4&query=Office+cleaning'
   },
   {
     id: 'plumbing-services',
