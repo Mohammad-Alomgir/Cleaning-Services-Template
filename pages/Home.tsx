@@ -176,7 +176,7 @@ className="flex items-center space-x-3 text-[#0b1b36] font-bold px-8 py-4 hover:
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="space-y-12">
               {SERVICES.slice(0, 3).map(service => (
-                <div key={service.id} className="flex items-start space-x-6 group text-right">
+                <div key={service.id} className="flex items-start space-x-6 group">
                   <div className="flex-1">
                     <h4 className="text-xl font-extrabold text-[#0b1b36] mb-2 group-hover:text-spark-blue transition-colors">{service.title}</h4>
                     <p className="text-gray-500 text-sm leading-relaxed">{service.description}</p>
