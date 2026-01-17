@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const Home: React.FC = () => {
   const [billingCycle, setBillingCycle] = useState<'monthly' | 'yearly'>('monthly');
 
-    /* ===================== COUNTER ANIMATION (ADDED) ===================== */
+  /* ===================== COUNTER ANIMATION (ADDED) ===================== */
   useEffect(() => {
     const counters = document.querySelectorAll('.counter');
 
@@ -16,7 +16,7 @@ const Home: React.FC = () => {
       const targetText = el.textContent?.replace('+', '') || '0';
       const target = parseInt(targetText);
       if (isNaN(target)) return;
-      
+
       let current = 0;
       const speed = 200;
 
@@ -58,7 +58,7 @@ const Home: React.FC = () => {
       {/* Hero Section */}
       <section className="relative w-full min-h-[85vh] flex items-center bg-gray-50 pt-10 overflow-hidden">
         {/* Abstract Clouds/Shapes */}
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-cover bg-no-repeat hidden lg:block" style={{backgroundImage: "url('https://images.unsplash.com/photo-1603712725038-e9334ae8f39f?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"}}></div>
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-cover bg-no-repeat hidden lg:block" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1603712725038-e9334ae8f39f?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}></div>
         <div className="absolute bottom-[-10%] left-[-5%] w-[40%] h-[60%] bg-blue-50 rounded-full blur-[120px] opacity-60"></div>
 
         <div className="container mx-auto px-4 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -95,7 +95,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Featured Service Cards */}
-      <section className="py-24 bg-white relative">
+      <section className="pt-24 pt-12 bg-white relative">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {SERVICES.slice(0, 3).map((service) => (
@@ -117,25 +117,25 @@ const Home: React.FC = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-24 bg-gray-50 relative overflow-hidden">
+      <section className="pt-24 pt-6 bg-gray-50 relative overflow-hidden">
         <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
-             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-               <img src="https://picsum.photos/seed/whyus/800/600" alt="Why Choose Us" className="w-full h-auto" />
-               <div className="absolute top-6 left-6 bg-spark-blue text-white p-6 rounded-xl shadow-xl">
-                  <span className="block text-sm font-bold opacity-80 uppercase tracking-widest mb-1">Established</span>
-                  <span className="block text-3xl font-extrabold">2020</span>
-               </div>
-             </div>
-             {/* Circular Stats */}
-             <div className="absolute -bottom-8 -right-8 w-48 h-48 bg-white rounded-full flex flex-col items-center justify-center shadow-2xl p-4 text-center border-8 border-gray-50">
-               <span className="text-4xl font-extrabold text-spark-blue">25+</span>
-               <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Services provided</span>
-             </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img src="https://picsum.photos/seed/whyus/800/600" alt="Why Choose Us" className="w-full h-auto" />
+              <div className="absolute top-6 left-6 bg-spark-blue text-white p-6 rounded-xl shadow-xl">
+                <span className="block text-sm font-bold opacity-80 uppercase tracking-widest mb-1">Established</span>
+                <span className="block text-3xl font-extrabold">2020</span>
+              </div>
+            </div>
+            {/* Circular Stats */}
+            <div className="absolute -bottom-8 -right-8 w-48 h-48 bg-white rounded-full flex flex-col items-center justify-center shadow-2xl p-4 text-center border-8 border-gray-50">
+              <span className="text-4xl font-extrabold text-spark-blue">25+</span>
+              <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Services provided</span>
+            </div>
           </div>
           <div>
-            <SectionHeading 
-              subtitle="About Cleaning Agency" 
+            <SectionHeading
+              subtitle="About Cleaning Agency"
               title="Why will you choose our services?"
               description="Spark Cleaning is a premier cleaning agency founded in Australia and expanded our services globally. We provide state-of-the-art cleaning solutions for modern homes and businesses."
             />
@@ -172,15 +172,15 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="space-y-12">
               {SERVICES.slice(0, 3).map(service => (
-                 <div key={service.id} className="flex items-start space-x-6 text-right group">
-                    <div className="flex-1">
-                      <h4 className="text-xl font-extrabold text-[#0b1b36] mb-2 group-hover:text-spark-blue transition-colors">{service.title}</h4>
-                      <p className="text-gray-500 text-sm leading-relaxed">{service.description}</p>
-                    </div>
-                    <div className="w-14 h-14 bg-blue-50 text-spark-blue rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-spark-blue group-hover:text-white transition-all">
-                      {service.icon}
-                    </div>
-                 </div>
+                <div key={service.id} className="flex items-start space-x-6 group">
+                  <div className="flex-1">
+                    <h4 className="text-xl font-extrabold text-[#0b1b36] mb-2 group-hover:text-spark-blue transition-colors">{service.title}</h4>
+                    <p className="text-gray-500 text-sm leading-relaxed">{service.description}</p>
+                  </div>
+                  <div className="w-14 h-14 bg-blue-50 text-spark-blue rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-spark-blue  transition-all">
+                    {service.icon}
+                  </div>
+                </div>
               ))}
             </div>
             <div className="relative">
@@ -189,15 +189,15 @@ const Home: React.FC = () => {
             </div>
             <div className="space-y-12">
               {SERVICES.slice(3, 6).map(service => (
-                 <div key={service.id} className="flex items-start space-x-6 group">
-                    <div className="w-14 h-14 bg-blue-50 text-spark-blue rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-spark-blue group-hover:text-white transition-all">
-                      {service.icon}
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="text-xl font-extrabold text-[#0b1b36] mb-2 group-hover:text-spark-blue transition-colors">{service.title}</h4>
-                      <p className="text-gray-500 text-sm leading-relaxed">{service.description}</p>
-                    </div>
-                 </div>
+                <div key={service.id} className="flex items-start space-x-6 group">
+                  <div className="w-14 h-14 bg-blue-50 text-spark-blue rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-spark-blue  transition-all">
+                    {service.icon}
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-xl font-extrabold text-[#0b1b36] mb-2 group-hover:text-spark-blue transition-colors">{service.title}</h4>
+                    <p className="text-gray-500 text-sm leading-relaxed">{service.description}</p>
+                  </div>
+                </div>
               ))}
             </div>
           </div>
@@ -234,7 +234,7 @@ const Home: React.FC = () => {
             <SectionHeading subtitle="Pricing Plan" title="We are offering the best pricing to help you!" centered />
             <div className="flex items-center justify-center space-x-4 mt-8">
               <span className={`text-sm font-bold ${billingCycle === 'monthly' ? 'text-spark-blue' : 'text-gray-400'}`}>Monthly</span>
-              <button 
+              <button
                 onClick={() => setBillingCycle(billingCycle === 'monthly' ? 'yearly' : 'monthly')}
                 className="w-14 h-7 bg-gray-200 rounded-full relative p-1 transition-colors"
               >
@@ -268,9 +268,18 @@ const Home: React.FC = () => {
                     </li>
                   ))}
                 </ul>
-                <button className={`w-full py-4 rounded font-bold transition-all ${plan.isPopular ? 'bg-spark-blue text-white hover:bg-spark-cyan' : 'bg-blue-50 text-spark-blue hover:bg-spark-blue hover:text-black'}`}>
+                <a
+                  href="https://4e3t6frw9r8md4ebg25z3ebfskryu349q6znz96gpx9k1op3hs-h852644758.scf.usercontent.goog/5f574d52-beb6-419c-95c5-f65fc703b0c0#/contact"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`block text-center w-full py-4 rounded font-bold transition-all ${plan.isPopular
+                      ? 'bg-spark-blue text-white hover:bg-spark-cyan'
+                      : 'bg-blue-50 text-spark-blue hover:bg-spark-blue hover:text-black'
+                    }`}
+                >
                   Try now
-                </button>
+                </a>
+
               </div>
             ))}
           </div>
@@ -282,7 +291,7 @@ const Home: React.FC = () => {
         {/* Bubbles */}
         <div className="absolute top-20 left-10 w-20 h-20 border-2 border-spark-blue rounded-full opacity-10"></div>
         <div className="absolute bottom-20 right-10 w-40 h-40 border-8 border-spark-cyan rounded-full opacity-10"></div>
-        
+
         <div className="container mx-auto px-4">
           <SectionHeading subtitle="Client's Testimonials" title="We are very happy for client's reviews." centered />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -306,7 +315,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-    
+
     </div>
   );
 };
