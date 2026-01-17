@@ -11,7 +11,7 @@ const About: React.FC = () => {
       <section className="bg-[#0b1b36] py-20 text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-spark-blue opacity-10 -skew-x-12 translate-x-20"></div>
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <h1 className="text-5xl font-extrabold mb-4">About Our Company</h1>
+          <h1 className="text-5xl font-extrabold mb-4">About Our Agency</h1>
           <div className="flex items-center justify-center space-x-2 text-spark-cyan font-bold uppercase tracking-widest text-sm">
             <span>Home</span>
             <span>/</span>
@@ -24,8 +24,8 @@ const About: React.FC = () => {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="grid grid-cols-2 gap-4">
-             <img src="https://plus.unsplash.com/premium_photo-1679500354595-0feead204a28?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cleaning" className="rounded-2xl shadow-lg mt-12" />
-             <img src="https://images.unsplash.com/photo-1713110824336-f78c320dcf8e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cleaning" className="rounded-2xl shadow-lg" />
+             <img src="https://picsum.photos/seed/about1/400/500" alt="Cleaning" className="rounded-2xl shadow-lg mt-12" />
+             <img src="https://picsum.photos/seed/about2/400/500" alt="Cleaning" className="rounded-2xl shadow-lg" />
           </div>
           <div>
             <SectionHeading 
@@ -54,33 +54,39 @@ const About: React.FC = () => {
         </div>
       </section>
 
-{/* Process Section */}
+      {/* Team Section */}
       <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-4">
-          <SectionHeading subtitle="How we work" title="Our Professional Process" centered />
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
-              { step: '01', title: 'Schedule Online', desc: 'Easily book your appointment through our website.' },
-              { step: '02', title: 'Expert Team Arrives', desc: 'Our certified professionals arrive at your doorstep.' },
-              { step: '03', title: 'Deep Cleaning', desc: 'We clean every corner with premium products.' },
-              { step: '04', title: 'Relax & Enjoy', desc: 'Your space is spotless, safe, and sparkling.' },
-            ].map((item, i) => (
-              <div key={i} className="text-center group">
-                <div className="relative mb-8 inline-block">
-                  <div className="w-20 h-20 rounded-full border-2 border-dashed border-gray-200 flex items-center justify-center text-3xl font-extrabold text-gray-200 group-hover:border-spark-blue group-hover:text-spark-blue transition-all">
-                    {item.step}
+          <SectionHeading 
+            subtitle="Team Members" 
+            title="We have a expert team to serve you." 
+            centered 
+          />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {TEAM_MEMBERS.map((member) => (
+              <div key={member.id} className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all relative">
+                <div className="relative h-[350px] overflow-hidden">
+                  <img src={member.image} alt={member.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-spark-blue bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="flex space-x-2">
+                       <button className="w-10 h-10 bg-white text-spark-blue rounded-full flex items-center justify-center hover:bg-spark-cyan hover:text-white transition-all"><Facebook size={16} /></button>
+                       <button className="w-10 h-10 bg-white text-spark-blue rounded-full flex items-center justify-center hover:bg-spark-cyan hover:text-white transition-all"><Twitter size={16} /></button>
+                       <button className="w-10 h-10 bg-white text-spark-blue rounded-full flex items-center justify-center hover:bg-spark-cyan hover:text-white transition-all"><Instagram size={16} /></button>
+                    </div>
                   </div>
-                  {i < 3 && <div className="hidden lg:block absolute top-10 -right-20 w-16 bg-gray-100"></div>}
                 </div>
-                <h4 className="text-xl font-bold mb-3">{item.title}</h4>
-                <p className="text-gray-500 text-sm">{item.desc}</p>
+                <div className="p-6 text-center">
+                  <h4 className="text-xl font-extrabold text-[#0b1b36] group-hover:text-spark-blue transition-colors">{member.name}</h4>
+                  <p className="text-xs text-gray-400 font-bold uppercase tracking-widest mt-1">{member.role}</p>
+                </div>
+                <button className="absolute bottom-6 right-6 w-10 h-10 bg-spark-blue text-white rounded-full flex items-center justify-center shadow-lg group-hover:bg-spark-cyan">
+                  <Share2 size={16} />
+                </button>
               </div>
             ))}
           </div>
         </div>
       </section>
-      
-      
     </div>
   );
 };

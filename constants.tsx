@@ -8,63 +8,52 @@ import {
   WashingMachine, 
   UtensilsCrossed,
   Hammer,
-  Trash2,
-  ShieldHalf
+  Trash2
 } from 'lucide-react';
-import { Service, Feautured, Testimonial, PricingPlan, TeamMember } from './types';
-
-
-export const Feautured: Feautured[] = [
-  {
-    id: 'expert-craftmanship',
-    title: 'Expert Craftsmanship',
-    description: 'Our team delivers top-notch cleaning with unmatched precision. Every corner of your home or office is handled with care and attention to detail.',
-    icon:<ShieldHalf className="w-8 h-8" />,
-  },
-];
+import { Service, Testimonial, PricingPlan, TeamMember } from './types';
 
 export const SERVICES: Service[] = [
   {
     id: 'house-cleaning',
     title: 'House Cleaning',
-    description: 'Our team delivers top-notch cleaning with unmatched precision. Every corner of your home or office is handled with care and attention to detail.',
-    icon:<ShieldHalf className="w-8 h-8" />,
-    image: 'https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    description: 'Professional home cleaning services tailored to your specific needs and schedule.',
+    icon: <Home className="w-8 h-8" />,
+    image: 'https://picsum.photos/seed/house/600/400'
   },
   {
     id: 'office-cleaning',
     title: 'Office Cleaning',
     description: 'Ensure a productive and healthy environment for your team with our commercial cleaning.',
     icon: <Building2 className="w-8 h-8" />,
-    image: 'https://plus.unsplash.com/premium_photo-1663047022624-2e573ccd0682?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    image: 'https://picsum.photos/seed/office/600/400'
   },
   {
     id: 'plumbing-services',
     title: 'Plumbing Services',
     description: 'Expert plumbing solutions for residential and commercial properties.',
     icon: <Droplets className="w-8 h-8" />,
-    image: 'https://images.unsplash.com/photo-1676210134188-4c05dd172f89?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    image: 'https://picsum.photos/seed/plumbing/600/400'
   },
   {
     id: 'window-cleaning',
     title: 'Window Cleaning',
     description: 'Crystal clear results for all your exterior and interior window surfaces.',
     icon: <Wind className="w-8 h-8" />,
-    image: 'https://plus.unsplash.com/premium_photo-1676810459656-ce0b050e9ccd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    image: 'https://picsum.photos/seed/window/600/400'
   },
   {
     id: 'laundry-service',
     title: 'Laundry Service',
     description: 'Premium laundry and dry cleaning services with convenient pickup and delivery.',
     icon: <WashingMachine className="w-8 h-8" />,
-    image: 'https://images.unsplash.com/photo-1635274605638-d44babc08a4f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    image: 'https://picsum.photos/seed/laundry/600/400'
   },
   {
     id: 'kitchen-cleaning',
     title: 'Kitchen Cleaning',
     description: 'Deep cleaning for kitchens to maintain the highest standards of hygiene.',
     icon: <UtensilsCrossed className="w-8 h-8" />,
-    image: 'https://images.unsplash.com/photo-1567767326925-e2047bf469d0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    image: 'https://picsum.photos/seed/kitchen/600/400'
   }
 ];
 
