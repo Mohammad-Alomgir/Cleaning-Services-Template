@@ -8,14 +8,14 @@ const Gallery: React.FC = () => {
   const categories = ['All', 'Residential', 'Commercial', 'Plumbing', 'Windows'];
   
   const galleryItems = [
-    { id: 1, category: 'Residential', image: 'https://picsum.photos/seed/gal1/600/600' },
-    { id: 2, category: 'Commercial', image: 'https://picsum.photos/seed/gal2/600/600' },
-    { id: 3, category: 'Plumbing', image: 'https://picsum.photos/seed/gal3/600/600' },
-    { id: 4, category: 'Windows', image: 'https://picsum.photos/seed/gal4/600/600' },
-    { id: 5, category: 'Residential', image: 'https://picsum.photos/seed/gal5/600/600' },
-    { id: 6, category: 'Commercial', image: 'https://picsum.photos/seed/gal6/600/600' },
-    { id: 7, category: 'Plumbing', image: 'https://picsum.photos/seed/gal7/600/600' },
-    { id: 8, category: 'Windows', image: 'https://picsum.photos/seed/gal8/600/600' },
+    { id: 1, category: 'Residential', image: 'https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { id: 2, category: 'Commercial', image: 'Ensure a productive and healthy environment for your team with our commercial cleaning' },
+    { id: 3, category: 'Plumbing', image: 'https://images.unsplash.com/photo-1676210134188-4c05dd172f89?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { id: 4, category: 'Windows', image: 'https://plus.unsplash.com/premium_photo-1676810459656-ce0b050e9ccd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { id: 5, category: 'Residential', image: 'https://plus.unsplash.com/premium_photo-1675937428940-6f0ddd4ce5c6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { id: 6, category: 'Commercial', image: 'https://images.unsplash.com/photo-1669101602124-f5b78895d91c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { id: 7, category: 'Plumbing', image: 'https://images.unsplash.com/photo-1594072282386-915fadf1a2d6?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+    { id: 8, category: 'Windows', image: 'https://images.unsplash.com/photo-1554600856-92fe2bf9e6e3?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
   ];
 
   const filteredItems = filter === 'All' ? galleryItems : galleryItems.filter(item => item.category === filter);
