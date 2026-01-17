@@ -89,7 +89,6 @@ className="flex items-center space-x-3 text-[#0b1b36] font-bold px-8 py-4 hover:
           </div>
           <div className="relative">
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-spark-cyan rounded-full opacity-20 animate-pulse"></div>
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 border-8 border-spark-blue rounded-full opacity-10"></div>
           </div>
         </div>
       </section>
