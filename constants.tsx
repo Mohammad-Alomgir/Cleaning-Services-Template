@@ -36,35 +36,35 @@ export const SERVICES: Service[] = [
     title: 'Office Cleaning',
     description: 'Ensure a productive and healthy environment for your team with our commercial cleaning.',
     icon: <Building2 className="w-8 h-8" />,
-    image: 'https://www.freepik.com/free-photo/professional-cleaning-service-person-cleaning-office-window_48048756.htm#fromView=keyword&page=1&position=10&uuid=8ec8e29b-04f4-455d-8dba-0f940c964bb4&query=Office+cleaning'
+    image: 'https://plus.unsplash.com/premium_photo-1663047022624-2e573ccd0682?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   {
     id: 'plumbing-services',
     title: 'Plumbing Services',
     description: 'Expert plumbing solutions for residential and commercial properties.',
     icon: <Droplets className="w-8 h-8" />,
-    image: 'https://picsum.photos/seed/plumbing/600/400'
+    image: 'https://images.unsplash.com/photo-1676210134188-4c05dd172f89?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   {
     id: 'window-cleaning',
     title: 'Window Cleaning',
     description: 'Crystal clear results for all your exterior and interior window surfaces.',
     icon: <Wind className="w-8 h-8" />,
-    image: 'https://picsum.photos/seed/window/600/400'
+    image: 'https://plus.unsplash.com/premium_photo-1676810459656-ce0b050e9ccd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   {
     id: 'laundry-service',
     title: 'Laundry Service',
     description: 'Premium laundry and dry cleaning services with convenient pickup and delivery.',
     icon: <WashingMachine className="w-8 h-8" />,
-    image: 'https://picsum.photos/seed/laundry/600/400'
+    image: 'https://images.unsplash.com/photo-1635274605638-d44babc08a4f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   {
     id: 'kitchen-cleaning',
     title: 'Kitchen Cleaning',
     description: 'Deep cleaning for kitchens to maintain the highest standards of hygiene.',
     icon: <UtensilsCrossed className="w-8 h-8" />,
-    image: 'https://picsum.photos/seed/kitchen/600/400'
+    image: 'https://images.unsplash.com/photo-1567767326925-e2047bf469d0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   }
 ];
 
