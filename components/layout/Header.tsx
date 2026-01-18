@@ -35,9 +35,6 @@ const Header: React.FC = () => {
             <span className="font-medium text-spark-blue">Welcome to our Spark Cleaning Service!</span>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-spark-blue"><Facebook size={14} /></a>
-              <a href="#" className="hover:text-spark-blue"><Twitter size={14} /></a>
-              <a href="#" className="hover:text-spark-blue"><Instagram size={14} /></a>
-              <a href="#" className="hover:text-spark-blue"><Linkedin size={14} /></a>
             </div>
           </div>
           <div className="flex space-x-8">
@@ -61,15 +58,21 @@ const Header: React.FC = () => {
       <nav className={`${isScrolled ? 'fixed top-0 left-0 bg-white shadow-md py-3' : 'relative bg-white py-5'} w-full transition-all duration-300`}>
         <div className="container mx-auto px-4 flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 group">
-            <div className="w-10 h-10 bg-spark-blue rounded-full flex items-center justify-center text-white font-bold text-xl group-hover:bg-spark-cyan transition-colors">
-              S
-            </div>
-            <div className="flex flex-col">
-              <span className="text-2xl font-extrabold text-spark-blue tracking-tight leading-none">SPARK</span>
-              <span className="text-xs font-semibold text-gray-400 uppercase tracking-[0.2em] mt-0.5">Cleaning</span>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img
+              src="https://organiclandscapiing.com/wp-content/uploads/2025/08/Green-Leaves-Landscaping-Logo.png"
+              alt="Coolex Logo"
+              className="
+          h-8
+          sm:h-10
+          md:h-12
+          lg:h-14
+          w-auto
+          object-contain
+        "
+            />
           </Link>
+
 
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center space-x-1">

@@ -18,42 +18,42 @@ export const SERVICES: Service[] = [
     title: 'House Cleaning',
     description: 'Professional home cleaning services tailored to your specific needs and schedule.',
     icon: <Home className="w-8 h-8" />,
-    image: 'https://picsum.photos/seed/house/600/400'
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRJcc-CJmmOPtlkTMudR76iL9tZAWArOaGMw&s'
   },
   {
     id: 'office-cleaning',
     title: 'Office Cleaning',
     description: 'Ensure a productive and healthy environment for your team with our commercial cleaning.',
     icon: <Building2 className="w-8 h-8" />,
-    image: 'https://picsum.photos/seed/office/600/400'
+    image: 'https://img.freepik.com/free-photo/full-shot-men-cleaning-office_23-2149345516.jpg?semt=ais_hybrid&w=740&q=80'
   },
   {
     id: 'plumbing-services',
     title: 'Plumbing Services',
     description: 'Expert plumbing solutions for residential and commercial properties.',
     icon: <Droplets className="w-8 h-8" />,
-    image: 'https://picsum.photos/seed/plumbing/600/400'
+    image: 'https://procrewschedule.com/wp-content/uploads/2020/06/plumber-at-work-in-a-bathroom-1024x683-1.jpg'
   },
   {
     id: 'window-cleaning',
     title: 'Window Cleaning',
     description: 'Crystal clear results for all your exterior and interior window surfaces.',
     icon: <Wind className="w-8 h-8" />,
-    image: 'https://picsum.photos/seed/window/600/400'
+    image: 'https://www.bondcleaningincanberra.com.au/wp-content/uploads/2019/12/windowcleaningservices-main_orig-1.jpg'
   },
   {
     id: 'laundry-service',
     title: 'Laundry Service',
     description: 'Premium laundry and dry cleaning services with convenient pickup and delivery.',
     icon: <WashingMachine className="w-8 h-8" />,
-    image: 'https://picsum.photos/seed/laundry/600/400'
+    image: 'https://www.sourceoffabric.com/wp-content/uploads/2024/09/217067478_m_normal_none-1200x780-1-1024x666.jpg'
   },
   {
     id: 'kitchen-cleaning',
     title: 'Kitchen Cleaning',
     description: 'Deep cleaning for kitchens to maintain the highest standards of hygiene.',
     icon: <UtensilsCrossed className="w-8 h-8" />,
-    image: 'https://picsum.photos/seed/kitchen/600/400'
+    image: 'https://thumbs.dreamstime.com/b/young-handsome-man-apron-protective-gloves-wiping-sink-kitchen-husband-doing-chores-man-cleaning-kitchen-countertop-92949669.jpg'
   }
 ];
 

@@ -8,14 +8,14 @@ const Gallery: React.FC = () => {
   const categories = ['All', 'Residential', 'Commercial', 'Plumbing', 'Windows'];
   
   const galleryItems = [
-    { id: 1, category: 'Residential', image: 'https://picsum.photos/seed/gal1/600/600' },
-    { id: 2, category: 'Commercial', image: 'https://picsum.photos/seed/gal2/600/600' },
-    { id: 3, category: 'Plumbing', image: 'https://picsum.photos/seed/gal3/600/600' },
-    { id: 4, category: 'Windows', image: 'https://picsum.photos/seed/gal4/600/600' },
-    { id: 5, category: 'Residential', image: 'https://picsum.photos/seed/gal5/600/600' },
-    { id: 6, category: 'Commercial', image: 'https://picsum.photos/seed/gal6/600/600' },
-    { id: 7, category: 'Plumbing', image: 'https://picsum.photos/seed/gal7/600/600' },
-    { id: 8, category: 'Windows', image: 'https://picsum.photos/seed/gal8/600/600' },
+    { id: 1, category: 'Residential', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRJcc-CJmmOPtlkTMudR76iL9tZAWArOaGMw&s' },
+    { id: 2, category: 'Commercial', image: 'https://img.freepik.com/free-photo/full-shot-men-cleaning-office_23-2149345516.jpg?semt=ais_hybrid&w=740&q=80' },
+    { id: 3, category: 'Plumbing', image: 'https://procrewschedule.com/wp-content/uploads/2020/06/plumber-at-work-in-a-bathroom-1024x683-1.jpg' },
+    { id: 4, category: 'Windows', image: 'https://www.bondcleaningincanberra.com.au/wp-content/uploads/2019/12/windowcleaningservices-main_orig-1.jpg' },
+    { id: 5, category: 'Residential', image: 'https://www.gracehomecleaning.com/wp-content/uploads/2017/10/Not-All-Residential-Cleaning-Professionals-are-Created-Equal-Grace-Home-Cleaning-1.jpg' },
+    { id: 6, category: 'Commercial', image: 'https://cdn.prod.website-files.com/60ff934f6ded2d17563ab9dd/61392d65ed61542d1d11f13b_commercial-cleaning-business.jpeg' },
+    { id: 7, category: 'Plumbing', image: 'https://lirp.cdn-website.com/2914e64f/dms3rep/multi/opt/5+Important+Plumbing+Services+You+Should+Know+About-1920w.jpg' },
+    { id: 8, category: 'Windows', image: 'https://skbuildingservices.com/wp-content/uploads/2023/02/What-kind-of-soap-do-professional-window-washers-use_-scaled-1.jpeg' },
   ];
 
   const filteredItems = filter === 'All' ? galleryItems : galleryItems.filter(item => item.category === filter);

@@ -24,8 +24,8 @@ const About: React.FC = () => {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="grid grid-cols-2 gap-4">
-             <img src="https://picsum.photos/seed/about1/400/500" alt="Cleaning" className="rounded-2xl shadow-lg mt-12" />
-             <img src="https://picsum.photos/seed/about2/400/500" alt="Cleaning" className="rounded-2xl shadow-lg" />
+             <img src="https://sweepsouth.com/wp-content/uploads/2024/10/shutterstock_1155286888-1.jpg" alt="Cleaning" className="rounded-2xl shadow-lg mt-12" />
+             <img src="https://cdn.prod.website-files.com/60eece3229f951ea48ce43b4/66d1b237781950cd5d89fc34_history-of-housecleaning-and-maid-services.webp" alt="Cleaning" className="rounded-2xl shadow-lg" />
           </div>
           <div>
             <SectionHeading 
@@ -54,7 +54,33 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Process Section */}
+      <section className="py-24 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <SectionHeading subtitle="How we work" title="Our Professional Process" centered />
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {[
+              { step: '01', title: 'Schedule Online', desc: 'Easily book your appointment through our website.' },
+              { step: '02', title: 'Expert Team Arrives', desc: 'Our certified professionals arrive at your doorstep.' },
+              { step: '03', title: 'Deep Cleaning', desc: 'We clean every corner with premium products.' },
+              { step: '04', title: 'Relax & Enjoy', desc: 'Your space is spotless, safe, and sparkling.' },
+            ].map((item, i) => (
+              <div key={i} className="text-center group">
+                <div className="relative mb-8 inline-block">
+                  <div className="w-20 h-20 rounded-full border-2 border-dashed border-gray-200 flex items-center justify-center text-3xl font-extrabold text-gray-200 group-hover:border-spark-blue group-hover:text-spark-blue transition-all">
+                    {item.step}
+                  </div>
+                  {i < 3 && <div className="hidden lg:block absolute top-10 -right-20 w-16 bg-gray-100"></div>}
+                </div>
+                <h4 className="text-xl font-bold mb-3">{item.title}</h4>
+                <p className="text-gray-500 text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section 
       <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <SectionHeading 
@@ -85,8 +111,8 @@ const About: React.FC = () => {
               </div>
             ))}
           </div>
-        </div>
-      </section>
+        </div> 
+      </section> */}
     </div>
   );
 };

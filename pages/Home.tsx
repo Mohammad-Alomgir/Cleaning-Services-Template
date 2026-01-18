@@ -54,49 +54,47 @@ const Home: React.FC = () => {
 
   return (
     <div className="w-full">
-      {/* Hero Section */}
-      <section className="relative w-full min-h-[85vh] flex items-center bg-gray-50 pt-10 overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-cover bg-no-repeat hidden lg:block" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1603712725038-e9334ae8f39f?q=80&w=1171&auto=format&fit=crop')" }}></div>
-        <div className="absolute bottom-[-10%] left-[-5%] w-[40%] h-[60%] bg-blue-50 rounded-full blur-[120px] opacity-60"></div>
+      {/* Hero Section with Full Background and Overlay */}
+      <section 
+        className="relative w-full min-h-[90vh] flex items-center pt-20 overflow-hidden bg-cover bg-center bg-no-repeat" 
+        style={{ backgroundImage: "url('https://static.vecteezy.com/system/resources/thumbnails/069/923/000/small/professional-african-american-man-cleaning-office-desk-with-cloth-and-cleaning-supplies-photo.jpeg')" }}
+      >
+        {/* Dark Overlay with 70% Opacity */}
+        <div className="absolute inset-0 z-0 bg-gradient-to-r from-black/100 to-black/50"></div>
 
-        <div className="container mx-auto px-4 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="max-w-xl">
-            <div className="flex items-center mb-4">
-              <div className="w-10 h-0.5 bg-spark-blue mr-3"></div>
-              <span className="text-spark-blue font-bold uppercase tracking-widest text-sm">We are Spark!</span>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-3xl">
+            <div className="flex items-center mb-6">
+              <div className="w-12 h-0.5 bg-spark-cyan mr-4"></div>
+              <span className="text-spark-cyan font-bold uppercase tracking-[0.3em] text-sm">Professional Cleaning Experts</span>
             </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-[#0b1b36] leading-[1.1] mb-8">
-              Best cleaning service in town!
+            <h1 className="text-4xl md:text-6xl lg:text-6xl font-extrabold text-white leading-[1.05] mb-8">
+              Keep Your Space <span className="text-spark-cyan">Sparkling</span> Clean!
             </h1>
-            <p className="text-gray-500 text-lg mb-10 leading-relaxed max-w-md">
-              As a leading cleaning expert, we help households and organizations maintain spotless environments with premium care.
+            <p className="text-gray-200 text-lg md:text-xl mb-10 leading-relaxed max-w-xl opacity-90">
+              As a leading cleaning expert, we help households and organizations maintain spotless environments with premium care and eco-friendly solutions.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <Link to="/services" className="bg-spark-blue hover:bg-spark-cyan text-white px-8 py-4 rounded-md font-bold text-sm transition-all shadow-xl flex items-center space-x-2">
+            <div className="flex flex-wrap gap-6 items-center">
+              <Link to="/services" className="bg-spark-blue hover:bg-white hover:text-spark-blue text-white px-10 py-5 rounded-md font-bold text-base transition-all shadow-2xl flex items-center space-x-3 transform hover:-translate-y-1">
                 <span>Our Services</span>
-                <Settings size={18} />
+                <Settings size={20} />
               </Link>
-              <button className="flex items-center space-x-3 text-[#0b1b36] font-bold px-8 py-4 hover:text-spark-blue transition-colors">
-                <div className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-spark-blue">
-                  <Play size={16} fill="currentColor" />
-                </div>
-                <span>Watch Story</span>
-              </button>
+              
             </div>
-          </div>
-          <div className="relative">
-            <div className="absolute -top-10 -right-10 w-40 h-40 bg-spark-cyan rounded-full opacity-20 animate-pulse"></div>
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 border-8 border-spark-blue rounded-full opacity-10"></div>
           </div>
         </div>
+
+        {/* Floating Accent Shapes */}
+        <div className="absolute bottom-0 right-0 w-1/4 h-32 bg-spark-cyan opacity-10 blur-3xl rounded-full"></div>
       </section>
 
       {/* Featured Service Cards */}
-      <section className="py-24 bg-white relative">
+      <section className="pt-[4rem] pb-[3rem] bg-white relative">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 -mt-32 relative z-20">
             {SERVICES.slice(0, 3).map((service) => (
-              <div key={service.id} className="group p-10 bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.05)] border border-gray-50 hover:border-spark-blue hover:-translate-y-2 transition-all duration-500">
+              <div key={service.id} className="group p-10 bg-white rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-50 hover:border-spark-blue hover:-translate-y-4 transition-all duration-500">
                 <div className="w-20 h-20 bg-blue-50 text-spark-blue rounded-full flex items-center justify-center mb-8 group-hover:bg-spark-blue group-hover:text-white transition-all duration-500">
                   {service.icon}
                 </div>
@@ -114,11 +112,11 @@ const Home: React.FC = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-24 bg-gray-50 relative overflow-hidden">
+      <section className="py-14 bg-gray-50 relative overflow-hidden">
         <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6958?q=80&w=800&auto=format&fit=crop" alt="Why Choose Us" className="w-full h-auto" />
+              <img src="https://www.part-time-maid.com/wp-content/uploads/2024/08/Why-Your-Office-Needs-Professional-Cleaning-Services.jpg" alt="Why Choose Us" className="w-full h-auto" />
               <div className="absolute top-6 left-6 bg-spark-blue text-white p-6 rounded-xl shadow-xl">
                 <span className="block text-sm font-bold opacity-80 uppercase tracking-widest mb-1">Established</span>
                 <span className="block text-3xl font-extrabold">2020</span>
@@ -162,13 +160,13 @@ const Home: React.FC = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-24 bg-white">
+      <section className="pt-[3rem] pb-[2rem] bg-white">
         <div className="container mx-auto px-4">
           <SectionHeading subtitle="What we do" title="Services we provide" centered />
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="space-y-12">
               {SERVICES.slice(0, 3).map(service => (
-                <div key={service.id} className="flex items-start space-x-6 group text-right">
+                <div key={service.id} className="flex items-start space-x-6 group">
                   <div className="flex-1">
                     <h4 className="text-xl font-extrabold text-[#0b1b36] mb-2 group-hover:text-spark-blue transition-colors">{service.title}</h4>
                     <p className="text-gray-500 text-sm leading-relaxed">{service.description}</p>
@@ -180,7 +178,7 @@ const Home: React.FC = () => {
               ))}
             </div>
             <div className="relative">
-              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=500&auto=format&fit=crop" alt="Cleaner" className="rounded-2xl mx-auto shadow-xl" />
+              <img src="https://thecleanstart.com/wp-content/uploads/2021/02/House-Cleaning-Service.jpg" alt="Cleaner" className="rounded-2xl mx-auto shadow-xl" />
               <div className="absolute inset-0 bg-spark-blue mix-blend-multiply opacity-20 rounded-2xl"></div>
             </div>
             <div className="space-y-12">
@@ -224,7 +222,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-24 bg-gray-50">
+      <section className="pt-24 pb-[1rem] bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <SectionHeading subtitle="Pricing Plan" title="We offering the best pricing to help you!" centered />
@@ -268,7 +266,7 @@ const Home: React.FC = () => {
                   to="/contact"
                   className={`block text-center w-full py-4 rounded font-bold transition-all ${plan.isPopular
                       ? 'bg-spark-blue text-white hover:bg-spark-cyan shadow-lg'
-                      : 'bg-blue-50 text-spark-blue hover:bg-spark-blue hover:text-white'
+                      : 'bg-blue-50 text-spark-blue hover:bg-spark-blue hover:text-black'
                     }`}
                 >
                   Try now
@@ -280,7 +278,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 bg-white relative overflow-hidden">
+      <section className="py-[2rem] bg-white relative overflow-hidden">
         <div className="absolute top-20 left-10 w-20 h-20 border-2 border-spark-blue rounded-full opacity-10"></div>
         <div className="absolute bottom-20 right-10 w-40 h-40 border-8 border-spark-cyan rounded-full opacity-10"></div>
 

@@ -88,9 +88,6 @@ const Footer: React.FC = () => {
           <p>2026 © All rights reserved by Spark Cleaning</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
-            <Link to="/about" className="hover:text-white transition-colors">About</Link>
-            <Link to="/services" className="hover:text-white transition-colors">Services</Link>
-            <Link to="/contact" className="hover:text-white transition-colors">Contact</Link>
           </div>
         </div>
       </div>
