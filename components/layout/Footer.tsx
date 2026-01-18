@@ -43,9 +43,7 @@ const Footer: React.FC = () => {
             </form>
             <div className="flex space-x-4 mt-8">
               <a href="#" className="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:bg-spark-blue hover:border-spark-blue transition-all"><Facebook size={18} /></a>
-              <a href="#" className="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:bg-spark-blue hover:border-spark-blue transition-all"><Twitter size={18} /></a>
-              <a href="#" className="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:bg-spark-blue hover:border-spark-blue transition-all"><Instagram size={18} /></a>
-              <a href="#" className="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:bg-spark-blue hover:border-spark-blue transition-all"><Linkedin size={18} /></a>
+             
             </div>
           </div>
 
@@ -88,6 +86,9 @@ const Footer: React.FC = () => {
           <p>2026 © All rights reserved by Spark Cleaning</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
+            <Link to="/about" className="hover:text-white transition-colors">About</Link>
+            <Link to="/services" className="hover:text-white transition-colors">Services</Link>
+            <Link to="/contact" className="hover:text-white transition-colors">Contact</Link>
           </div>
         </div>
       </div>
